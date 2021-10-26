@@ -1,6 +1,9 @@
 package main
 
-import "learngo/dbhelper"
+import (
+	"fmt"
+	"learngo/dbhelper"
+)
 
 //import (
 //	"github.com/gin-gonic/gin"
@@ -18,4 +21,5 @@ import "learngo/dbhelper"
 
 func main() {
 	dbhelper.InitDB()
+	fmt.Println("Success start")
 }
