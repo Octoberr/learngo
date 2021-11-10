@@ -1,4 +1,4 @@
 package dbhelper
 
-type dbconfig struct {
+type DBConfig struct {
 }

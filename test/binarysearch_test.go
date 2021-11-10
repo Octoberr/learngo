@@ -15,3 +15,7 @@ func Test_binarysearch(t *testing.T) {
 	fmt.Println(res)
 
 }
+
+func Test_emptymap(t *testing.T) {
+	gocourse.RecognizeKey()
+}

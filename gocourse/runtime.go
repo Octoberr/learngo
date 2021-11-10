@@ -1,9 +1,28 @@
 package gocourse
 
+import "fmt"
+
 type Run struct {
 	Time   int
 	Result string
 	Failed bool
+}
+
+type Set map[string]struct{}
+
+func RecognizeKey() {
+	set := make(Set)
+	for _, key := range []string{"a", "b", "c", "d"} {
+		set[key] = struct{}{}
+	}
+	fmt.Println(len(set))
+	_, ok := set["a"]
+	if ok {
+		fmt.Println("a is in the set")
+	}
+	delete(set, "a")
+	fmt.Println(set)
+
 }
 
 func averageRuntimeInSeconds(runs []Run) float64 {
